@@ -39,6 +39,7 @@ public class PhoneticsAdapter  extends RecyclerView.Adapter<PhoneticViewHolder> 
         holder.imageButton_audio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //check on the media player documentation and use the latest media player settings
                 MediaPlayer player=new MediaPlayer();
                 try{
                     player.setAudioStreamType(AudioManager.STREAM_MUSIC);
